@@ -1,0 +1,330 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Righteous';
+  background: rgb(149, 0, 255);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(149, 0, 255, 1) 0%,
+    rgba(3, 0, 84, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(149, 0, 255, 1) 0%,
+    rgba(3, 0, 84, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(149, 0, 255, 1) 0%,
+    rgba(3, 0, 84, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9500ff",endColorstr="#030054",GradientType=1);
+}
+
+body * {
+  transition: all 300ms ease-in-out;
+}
+
+.App {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+header {
+  height: 260px;
+  color: #eee;
+
+  margin-bottom: 30px;
+}
+
+header > div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+header > div h1 {
+  margin: 0px;
+  padding-top: 70px;
+  font-size: 5rem;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+.content {
+  width: 100%;
+  max-width: 400px;
+  /* border: 1px solid #eee; */
+  padding: 10px;
+  border-radius: 10px;
+  background: none;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-size: 18px;
+  /* color: #eee; */
+  font-family: 'verdana';
+}
+form input[type='text'],
+/* form textarea {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 10px;
+  background: none;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-size: 18px;
+  color: #eee;
+  font-family: 'verdana';
+} */
+
+form input[type='submit'] {
+  background: #fdfc47; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24fe41,
+    #fdfc47
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24fe41,
+    #fdfc47
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 10px 15px;
+  border: none;
+  color: #222;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+/* #cover {
+  display: none;
+} */
+.control__button {
+  display: flex;
+  position: relative;
+}
+.file__input {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+/* input[type="file"] {
+  display: none;
+} */
+label.cover {
+  margin-top: -5px;
+  display: block;
+  width: 125px;
+  height: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  border: 1px solid #eee;
+  text-indent: 10px;
+}
+
+label.cover i {
+  font-size: 1.2rem;
+  padding-right: 10px;
+}
+
+.postsContainer {
+  display: flex;
+  margin: 40px auto;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.post {
+  width: 320px;
+  min-width: 320px;
+  background: #eee;
+  padding: 10px;
+
+  font-family: 'verdana';
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 88px -23px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 88px -23px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 88px -23px rgba(0, 0, 0, 0.75);
+}
+
+.post h2 {
+  font-family: 'Righteous';
+}
+/* 
+.post > div {
+  height: 240px;
+  width: 100%;
+  background-size: 200% !important;
+  border-radius: 5px;
+}
+.post > div:hover {
+  background-size: 210% !important;
+} */
+label {
+  display: block;
+  color: #eee;
+  margin-bottom: 10px;
+}
+.delete {
+  background: #ff416c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  padding: 10px;
+  color: #eee;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.message {
+  width: 70%;
+  text-align: center;
+  padding-top: 120px;
+  margin: 0 auto;
+  color: #eee;
+}
+
+.displayNone {
+  display: none;
+}
+.display {
+  width: 100%;
+}
+.submit {
+  margin-bottom: 30px;
+}
+.posts__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.post {
+  width: 20%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.post__control {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+}
+.update-file__input {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.update-file__label {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  background: #00bfff;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+/* 
+.update-file__control {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.update-file__submit {
+  position: relative;
+  display: flex;
+  justify-content: center;
+} */
+.div__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.post-btn__control > * {
+  margin: 20px;
+}
+.post-btn__control > a {
+  background: #468f59;
+  /* background: linear-gradient(to right, #ff4b2b, #ff416c); */
+  border: none;
+  padding: 10px;
+  color: #eee;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.main__stats {
+  margin-left: 50px;
+}
+.clear__btn {
+  margin-top: 20px;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  /* width: 100%; */
+  background: #00bfff;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+#search {
+  width: 100%;
+  max-width: 400px;
+  /* border: 1px solid #eee; */
+  padding: 10px;
+  border-radius: 10px;
+  background: none;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-size: 18px;
+  /* color: #eee; */
+  font-family: 'verdana';
+}
+.search-result__none {
+  display: none;
+}
+.search-result{
+margin-bottom: 20px;
+}
+.search-result__found{
+  color: #24fe41;
+}
+
+.search-result__not-found{
+  color: #ff4b2b;
+}
